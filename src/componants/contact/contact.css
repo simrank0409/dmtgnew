@@ -1,0 +1,142 @@
+#Contact {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background: #eaf2ff;
+}
+
+#Contact::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: auto;
+  bottom: -35px;
+  left: 0px;
+  right: 0px;
+  pointer-events: none;
+  background: url(../../static/img/contactUs.png) no-repeat;
+  background-position: right;
+  background-size: auto 80%;
+}
+
+#Contact .container-fluid {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+#Contact .container-fluid h2 {
+  color: #413e66;
+  margin: 0px 0px 50px 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#Contact .container-fluid h2 span {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0 2px;
+}
+
+/*######################### Footer #########################*/
+#DMT_Map {
+  margin: 0px 0px -7px;
+}
+
+footer.main-footer {
+  margin-top: 0px;
+}
+/*######################### Map #########################*/
+.addrDetails {
+  padding: 50px 0px;
+}
+
+.addrDetails .row > div {
+  border-right: 1px solid #ccc;
+}
+
+.addrDetails .row > div:last-child {
+  border: none;
+}
+
+.addrFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.addrFlex i,
+.addrFlex .iconify {
+  font-size: 45px;
+  position: relative;
+}
+
+.addrFlex i::before,
+.addrFlex .iconify::before {
+  position: relative;
+  z-index: 1;
+  color: #413e66;
+}
+
+.addrFlex i::after,
+.addrFlex .iconify::after {
+  background: #413e662b;
+  content: "";
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  left: auto;
+  right: auto;
+  top: 50%;
+  transform: translate(-83%, -50%);
+  border-radius: 50%;
+}
+
+.addrFlex h2 {
+  font-size: 22px;
+  margin: 30px 0px 20px;
+  color: #413e66;
+}
+
+.addrFlex span.Infos {
+  font-size: 16px;
+  text-align: center;
+}
+
+.addrFlex span.Infos a {
+  display: block;
+  padding: 2px 0px;
+}
+
+.submitBtn {
+  color: #fff !important;
+  background: rgb(27, 177, 220);
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px 30px;
+  transition: all 0.3s ease 0s;
+}
+
+#messageForm {
+  background: #f5f8fd;
+  padding: 50px 0px 60px;
+}
+
+#messageForm label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  margin-left: 2px;
+}
+
+#messageForm .form-group {
+  margin-bottom: 30px;
+}

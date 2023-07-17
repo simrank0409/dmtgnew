@@ -1,0 +1,156 @@
+.OP_BannerC {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background: #eaf2ff;
+}
+
+.OP_BannerC::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: auto;
+  bottom: -40px;
+  left: -60px;
+  right: 0px;
+  pointer-events: none;
+  background: url(../../static/img/career.svg) no-repeat;
+  background-position: right;
+  background-size: auto 80%;
+}
+
+.OP_BannerC .container-fluid {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.OP_BannerC .container-fluid h2 {
+  color: #413e66;
+  margin: 0px 0px 50px 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.OP_BannerC .container-fluid h2 span {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0px 2px;
+}
+
+@media (max-width: 700px) {
+  .OP_BannerC {
+    height: 30vh;
+  }
+}
+
+.serviceHeading {
+  margin-top: 60px;
+}
+
+.checkFirst div:first-child div {
+  margin-top: 0px;
+}
+
+.services {
+  padding: 50px 0px 0px;
+}
+
+.accordion {
+  position: relative;
+}
+
+.accordion::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0px;
+  z-index: 1;
+  border-left: 3px dashed #431890;
+}
+
+.accordion > .card {
+  border: none;
+  overflow: visible;
+}
+
+.card-body {
+  padding: 1.25rem 2rem;
+}
+
+.jobHead {
+  position: relative;
+  padding: 6px 0px 6px 20px;
+  font-size: 21px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.jobHead::before {
+  position: absolute;
+  left: -6px;
+  background: #fff;
+  top: 12px;
+  content: "";
+  font-size: 15px;
+  color: #4a4a4a;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  z-index: 9;
+}
+
+.jobOpening {
+  font-size: 16px;
+}
+
+.jobOpening h2 {
+  font-size: 20px;
+  border-bottom: 2px solid #ccc;
+  padding: 8px 0px;
+}
+
+.jobOpening h4 {
+  margin: 15px 0px 6px;
+  font-size: 18px;
+}
+
+.jobOpening *:first-child {
+  margin-top: 0px;
+}
+
+.jobOpening h4 span {
+  border-bottom: 1px solid #333;
+}
+
+.jobOpening ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.jobOpening ul li {
+  font-size: 14px;
+  padding: 2px 0px 4px 22px;
+  position: relative;
+  color: #6b6b6b;
+}
+
+.jobOpening ul li::before {
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  font-family: "IcoFont";
+  content: "\ea98";
+  font-size: 15px;
+  color: #4a4a4a;
+}
+
+.jobOpening p {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin: 15px 0px 0px;
+}

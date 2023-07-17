@@ -1,0 +1,249 @@
+/*######################### Map #########################*/
+.addrDetails {
+  padding: 50px 0px;
+}
+
+.addrDetails .row > div {
+  border-right: 1px solid #ccc;
+}
+
+.addrDetails .row > div:last-child {
+  border: none;
+}
+
+.addrFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.addrFlex i,
+.addrFlex .iconify {
+  font-size: 45px;
+  position: relative;
+}
+
+.addrFlex i::before,
+.addrFlex .iconify::before {
+  position: relative;
+  z-index: 1;
+  color: #413e66;
+}
+
+.addrFlex i::after,
+.addrFlex .iconify::after {
+  background: #413e662b;
+  content: "";
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  left: auto;
+  right: auto;
+  top: 50%;
+  transform: translate(-83%, -50%);
+  border-radius: 50%;
+}
+
+.addrFlex h2 {
+  font-size: 22px;
+  margin: 30px 0px 20px;
+  color: #413e66;
+}
+
+.addrFlex span.Infos {
+  font-size: 16px;
+  text-align: center;
+}
+
+.addrFlex span.Infos a {
+  display: block;
+  padding: 2px 0px;
+}
+
+.submitBtn {
+  color: #fff !important;
+  background: rgb(27, 177, 220);
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px 30px;
+  transition: all 0.3s ease 0s;
+}
+
+#messageForm {
+  background: #f5f8fd;
+  padding: 50px 0px 60px;
+}
+
+#messageForm label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  margin-left: 2px;
+}
+
+#messageForm .form-group {
+  margin-bottom: 30px;
+}
+
+.captchaImg {
+  border: none;
+  outline: none;
+  pointer-events: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: monospace;
+  margin: 18px 0px 0px;
+  padding: 0;
+  line-height: normal;
+  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  background: #fc00ff;
+  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
+  background: linear-gradient(to right, #00dbde, #fc00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*####################################################################################*/
+
+#testimonials {
+  padding: 60px 0;
+}
+
+#testimonials .section-header {
+  margin-bottom: 40px;
+}
+
+#testimonials .testimonial-item {
+  margin: 0px 15px;
+}
+
+#testimonials .testimonial-item .testimonial-img {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  float: left;
+}
+
+#testimonials .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+  margin-left: 140px;
+}
+
+#testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 15px 0;
+  margin-left: 140px;
+}
+
+#testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 0 15px 140px;
+}
+
+#testimonials .owl-nav,
+#testimonials .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#testimonials .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  outline: none;
+}
+
+#testimonials .owl-dot.active {
+  background-color: #1bb1dc;
+}
+
+#call-to-action {
+  background: var(--color);
+  background-size: cover;
+  padding: 40px 0;
+}
+
+#call-to-action .cta-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-action .cta-text {
+  color: #fff;
+}
+
+#call-to-action .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 26px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+  background: #1bb1dc;
+  border: 3px solid #1bb1dc;
+}
+
+@media (min-width: 991px) {
+  #call-to-action .cta-btn-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}
+
+#why-us .counters {
+  padding-top: 40px;
+}
+
+#why-us .counters span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  display: block;
+  color: var(--color);
+}
+
+#why-us .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: var(--color_lght);
+}
+/*#################################################*/
+.paraSize {
+  font-size: 15px;
+}

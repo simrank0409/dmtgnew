@@ -1,0 +1,159 @@
+﻿.content {
+    padding-bottom: 30px;
+}
+
+.plans {
+    position: relative;
+    background: #fff;
+    margin: 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 8px #0000001c;
+    z-index: 1;
+    --Bronze: linear-gradient(to bottom, #A57164 0%, #966255 100%);
+    --Silver: linear-gradient(to bottom, #a0a0a0 0%, #cbcfda 100%);
+    --Gold: linear-gradient(90deg, rgb(235, 237, 22), rgb(251, 163, 80));
+    --Platinum: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+    transition: 500ms;
+}
+
+    .plans:hover {
+        transform: scale(1.04)
+    }
+
+    .plans .planName {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        font-size: 32px;
+        font-weight: 600;
+        color: #fff;
+        padding: 10px 0px 50px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+        .plans .planName::after {
+            --size: 1500px;
+            position: absolute;
+            left: 50%;
+            top: -1400px;
+            transform: translate(-50%, 0px);
+            content: '';
+            background: #c8f4c8;
+            height: var(--size);
+            width: var(--size);
+            border-radius: 50%;
+            z-index: -1;
+            pointer-events: none;
+            box-shadow: inset 0 0 0px 10px rgb(255 255 255 / 0.40), inset 0 0 0px 20px rgb(255 255 255 / 0.20), inset 0 0 0px 30px rgb(255 255 255 / 0.10);
+        }
+
+    .plans .planPrice {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+        .plans .planPrice span {
+            position: relative;
+            font-size: 30px;
+            font-weight: 600;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+            .plans .planPrice span::before {
+                font-family: sans-serif;
+            }
+
+            .plans .planPrice span::after {
+                position: absolute;
+                bottom: 2px;
+                left: 50%;
+                transform: translate(-50%, 0px);
+                content: '';
+                height: 2px;
+                width: 110px;
+            }
+
+    .plans ul.planFeatures {
+        margin: 10px 0px 20px;
+        padding: 0px;
+        list-style: none;
+    }
+
+        .plans ul.planFeatures li {
+            position: relative;
+            /* border-bottom: 1px solid #ccc; */
+            padding: 2px 60px 2px 80px;
+            font-size: 15px;
+        }
+
+            .plans ul.planFeatures li::before {
+                position: absolute;
+                font-family: 'FontAwesome';
+                content: "\f058";
+                color: #28a745;
+                margin-left: -25px;
+                font-weight: 600;
+            }
+
+            .plans ul.planFeatures li.del::before {
+                content: "\f057";
+                color: #dc3545;
+            }
+
+    .plans .planBuy {
+        color: #fff !important;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 6px 30px;
+        border-radius: 8px;
+        margin-bottom: -20px;
+        box-shadow: 0 0 10px 8px #0000001c;
+        transition: 500ms;
+        background: var(--success) !important;
+    }
+
+        .plans .planBuy:hover {
+            box-shadow: none;
+        }
+
+    .plans.Bronze .planName::after, .plans.Bronze .planPrice span, .plans.Bronze .planPrice span::after, .plans.Bronze .planBuy {
+        background: var(--Bronze);
+    }
+
+    .plans.Bronze .planPrice span {
+        background: var(--Bronze);
+        -webkit-background-clip: text;
+    }
+
+    .plans.Silver .planName::after, .plans.Silver .planPrice span, .plans.Silver .planPrice span::after, .plans.Silver .planBuy {
+        background: var(--Silver);
+    }
+
+    .plans.Silver .planPrice span {
+        background: var(--Silver);
+        -webkit-background-clip: text;
+    }
+
+    .plans.Gold .planName::after, .plans.Gold .planPrice span::after, .plans.Gold .planBuy {
+        background: var(--Gold);
+    }
+
+    .plans.Gold .planPrice span {
+        background: var(--Gold);
+        -webkit-background-clip: text;
+    }
+
+    .plans.Platinum .planName::after, .plans.Platinum .planPrice span, .plans.Platinum .planPrice span::after, .plans.Platinum .planBuy {
+        background: var(--Platinum);
+    }
+
+    .plans.Platinum .planPrice span {
+        background: var(--Platinum);
+        -webkit-background-clip: text;
+    }

@@ -1,0 +1,224 @@
+.tabs {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: 300;
+  font-size: 1.25em;
+}
+
+/* Nav */
+.tabs nav {
+  text-align: center;
+}
+
+.tabs nav ul {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  -ms-box-pack: center;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  border-bottom: 10px solid #e7ecea;
+}
+
+.tabs nav ul li {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0;
+  text-align: center;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.tabs nav a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 2.5;
+}
+
+.tabs nav a span {
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 0.75em;
+}
+
+.tabs nav li.tab-current a {
+  color: #74777b;
+}
+
+.tabs nav a:focus {
+  outline: none;
+}
+
+/* Content */
+.content-wrap {
+  position: relative;
+}
+
+.content-wrap section {
+  display: none;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 1200px;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+.content-wrap section.content-current {
+  display: block;
+}
+
+.content-wrap section div {
+  margin: 0;
+  padding: 0.75em 0;
+  color: #4a4a4a;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* Fallback */
+.no-js .content-wrap section {
+  display: block;
+  padding-bottom: 2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.no-flexbox nav ul {
+  display: block;
+}
+
+.no-flexbox nav ul li {
+  min-width: 15%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 58em) {
+  .tabs nav a.icons span {
+    display: none;
+  }
+
+  .tabs nav a:before {
+    margin-right: 0;
+  }
+}
+
+/* ########################################################################################## */
+
+/*****************************/
+/* Bar */
+/*****************************/
+
+.tabs-style-bar nav {
+  background: rgba(40, 44, 42, 0.05);
+}
+
+.tabs-style-bar nav ul {
+  border: 4px solid transparent;
+}
+
+.tabs-style-bar nav ul li a {
+  margin: 0 2px;
+  background-color: #f7f7f7;
+  color: #74777b;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.tabs-style-bar nav ul li a:hover,
+.tabs-style-bar nav ul li a:focus {
+  color: #2cc185;
+}
+
+.tabs-style-bar nav ul li a span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 0.6em;
+}
+
+.tabs-style-bar nav ul li.tab-current a {
+  background: #0be08b;
+  color: #fff;
+}
+
+/*****************************/
+/* Underline */
+/*****************************/
+
+.tabs-style-underline nav {
+  /* background: #fff; */
+}
+
+.tabs-style-underline nav a {
+  padding: 0px 0 5px;
+  border-left: 1px solid #e7ecea;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  line-height: 2;
+}
+
+.tabs-style-underline nav li:first-child a {
+  border: none;
+}
+
+.tabs-style-underline nav li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #2cc185;
+  content: "";
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: translate3d(0, 150%, 0);
+  transform: translate3d(0, 150%, 0);
+  border-radius: 8px;
+}
+
+.tabs-style-underline nav li.tab-current a::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* ################################# */
+.tabs-style-underline nav li a[href="#home"]::after {
+  background: #e1bee7;
+}
+.tabs-style-underline nav li a[href="#contact"]::after {
+  background: #f8bbd0;
+}
+.tabs-style-underline nav li a[href="#Franchise"]::after {
+  background: #b2dfdb;
+}
+.tabs-style-underline nav li a[href="#profile"]::after {
+  background: #c8e6c9;
+}
+
+.modelHead {
+  display: block;
+  font-size: 22px;
+  color: var(--color);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 5px;
+}

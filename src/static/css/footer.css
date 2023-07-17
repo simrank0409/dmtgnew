@@ -1,0 +1,298 @@
+footer.main-footer {
+    position: relative;
+    background: #001c27;
+    padding-top: 0;
+    padding-bottom: 120px !important;
+    color: #c1c1c1;
+    --footer-icon-size: 2.4rem;
+    margin-top: 120px
+}
+
+.footerDmtDetails img {
+    height: auto;
+    width: 120px;
+    margin: 10px 0 10px
+}
+
+.footerDmtDetails p {
+    font-size: var(--footerFont);
+    margin: 15px 0 15px;
+    text-align: justify
+}
+
+svg.footerWave {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    right: 0;
+    transform: translate(0,-100%);
+    z-index: 0;
+    pointer-events: none
+}
+
+.main-footer::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    height: 105px;
+    background: url(../img/footerBottom.png) repeat-x;
+    background-size: 900px;
+    width: 100%
+}
+
+.main-footer + .companyName {
+    text-align: center;
+    background: #00131b;
+    padding: 10px 0px;
+    border-top: 1px solid #ccc;
+    color: #dedede;
+    font-size: var(--footerFont)
+}
+
+    .main-footer + .companyName .row > .col-md-6:first-child {
+        text-align: left
+    }
+
+    .main-footer + .companyName ul {
+        text-align: right;
+        list-style: none;
+        margin-bottom: 0;
+        padding: 0
+    }
+
+        .main-footer + .companyName ul li {
+            margin-left: 10px;
+            display: inline-block;
+            padding-right: 10px
+        }
+
+            .main-footer + .companyName ul li a {
+                color: inherit;
+                font-size: var(--footerFont)
+            }
+
+.footerLinksHead {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500
+}
+
+    .footerLinksHead::before {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        content: '';
+        height: 1px;
+        width: 25%;
+        background: var(--default-bg);
+        box-shadow: 0 0 1px var(--default-bg)
+    }
+
+ul.footerLinks {
+    list-style: none;
+    padding-left: 20px;
+    margin: 10px 0 10px
+}
+
+    ul.footerLinks li {
+        position: relative;
+        padding: 2px 0
+    }
+
+        ul.footerLinks li a {
+            color: inherit !important;
+            text-decoration: none;
+            font-size: var(--footerFont) !important;
+            padding: 0 4px !important;
+            border-radius: 4px
+        }
+
+        ul.footerLinks li:before {
+            font-family: Icofont;
+            content: '\ea98';
+            position: absolute;
+            left: -20px;
+            top: 3px
+        }
+
+        ul.footerLinks li.mobile:before {
+            font-family: Icofont;
+            content: "\ea3d";
+            color: var(--default-bg)
+        }
+        ul.footerLinks li.call:before {
+            font-family: Icofont;
+            content: "\f008";
+            color: var(--default-bg)
+        }
+
+        ul.footerLinks li.whatsapp:before {
+            font-family: Icofont;
+            content: "\e957";
+            color: var(--default-bg)
+        }
+
+        ul.footerLinks li.mail:before {
+            font-family: Icofont;
+            content: "\ef12";
+            color: var(--default-bg)
+        }
+
+        ul.footerLinks li.addr:before {
+            font-family: Icofont;
+            content: "\e98a";
+            color: var(--default-bg)
+        }
+
+.icon-button {
+    background-color: transparent;
+    border-radius: var(--footer-icon-size);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.4rem;
+    height: var(--footer-icon-size);
+    line-height: var(--footer-icon-size);
+    margin: 0 10px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: var(--footer-icon-size)
+}
+
+    .icon-button span {
+        border-radius: 0;
+        display: block;
+        height: 0;
+        left: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        width: 0
+    }
+
+    .icon-button:hover span {
+        width: var(--footer-icon-size);
+        height: var(--footer-icon-size);
+        border-radius: var(--footer-icon-size);
+        margin: -1.2rem;
+        -webkit-box-shadow: 0 0 10px 2px #4c4c4c;
+        -moz-box-shadow: 0 0 10px 2px #4c4c4c;
+        box-shadow: 0 0 10px 2px #4c4c4c
+    }
+
+.twitter span {
+    background-color: #4099ff
+}
+
+.facebook span {
+    background-color: #3b5998
+}
+
+.youtube span {
+    background-color: #ff0000
+}
+
+.linkedin span {
+    background-color: #0078b0
+}
+
+.instagram span {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%);
+    box-shadow: 0 3px 10px rgba(0,0,0,.25)
+}
+
+.icon-button i {
+    background: 0 0;
+    color: #fff;
+    height: var(--footer-icon-size);
+    left: 0;
+    line-height: var(--footer-icon-size);
+    position: absolute;
+    top: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    width: var(--footer-icon-size);
+    z-index: 10
+}
+
+.icon-button .icofont-twitter {
+    color: #4099ff
+}
+
+.icon-button .icofont-facebook {
+    color: #3b5998
+}
+
+.icon-button .icofont-linkedin {
+    color: #0078b0
+}
+
+.icon-button .icofont-youtube-play {
+    color: #ff0000
+}
+
+.icon-button .icofont-instagram {
+    color: #d6249f
+}
+
+.icon-button:hover .icofont-facebook, .icon-button:hover .icofont-youtube-play, .icon-button:hover .icofont-instagram, .icon-button:hover .icofont-linkedin, .icon-button:hover .icofont-twitter {
+    color: #fff !important
+}
+
+@media (max-width:575px) {
+    svg.footerWave {
+        top: 1px
+    }
+
+    footer .main-footer {
+        margin-top: 50px
+    }
+
+    .main-footer + .companyName .row > .col-md-6:first-child, .social-media-ico {
+        text-align: center
+    }
+
+    .Package-heading span.head {
+        font-size: 32px
+    }
+
+    .HoldiayForm {
+        padding: 15px 20px 30px
+    }
+
+    a.dsplyPkg {
+        margin: .5rem 0;
+        padding: 8px;
+        flex-direction: column
+    }
+
+        a.dsplyPkg .tourPost1 {
+            height: 200px
+        }
+
+        a.dsplyPkg .tourPost2 {
+            padding-top: 15px;
+            padding-bottom: 15px
+        }
+
+    #Testimonials-Section {
+        padding-top: 0;
+        padding-bottom: 0
+    }
+
+    .hidden-xs {
+        display: none
+    }
+}

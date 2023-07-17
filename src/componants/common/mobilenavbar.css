@@ -1,0 +1,49 @@
+.mobilenNavBar {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  display: none;
+}
+.cart-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 10px 30px;
+  transform: translateX(100%);
+  animation: sliderAni 0.4s forwards;
+}
+
+@keyframes sliderAni {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 700px) {
+  .mobilenNavBar {
+    display: block;
+  }
+}
+
+.hello ul li{
+  position: relative;
+float: none;
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
+
+.hello ul li a {
+padding-left: 2px;
+}

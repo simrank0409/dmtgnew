@@ -1,0 +1,124 @@
+#MeetTheTeam {
+  padding: 50px 0px;
+}
+
+.teamFlex {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0px 40px;
+}
+
+.teamFlex .ImgSection {
+  flex: 2;
+  margin: 25px 0px;
+}
+
+.teamFlex .ImgSection img {
+  padding: 15px;
+}
+
+.teamFlex .ImgSection ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.teamFlex .ImgSection ul li {
+  flex: 1;
+  font-size: 15px;
+  text-align: center;
+}
+
+.teamFlex .ImgSection ul li:last-child {
+  color: #0271ae;
+}
+
+.teamFlex .ContentSectin {
+  flex: 6;
+}
+
+.teamFlex .ContentSectin b {
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: var(--color);
+  font-weight: 600;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+  padding: 15px 0px 0px;
+}
+
+.teamFlex .ContentSectin b::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  height: 2px;
+  width: 100px;
+  background: #afafaf;
+}
+
+.teamFlex .ContentSectin span {
+  display: block;
+  margin: 5px 0px 6px;
+  font-style: italic;
+}
+
+.teamFlex .ContentSectin p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.OP_BannerT {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background: #eaf2ff;
+}
+
+.OP_BannerT::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: auto;
+  bottom: -40px;
+  left: -60px;
+  right: 0px;
+  pointer-events: none;
+  background: url(../../static/img/team.png) no-repeat;
+  background-position: right;
+  background-size: auto 80%;
+}
+
+.OP_BannerT .container-fluid {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.OP_BannerT .container-fluid h2 {
+  color: #413e66;
+  margin: 0px 0px 50px 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.OP_BannerT .container-fluid h2 span {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0px 2px;
+}
+
+@media (max-width: 700px) {
+  .OP_BannerT {
+    height: 40vh;
+    padding-top: 100px;
+  }
+}

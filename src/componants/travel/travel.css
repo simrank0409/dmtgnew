@@ -1,0 +1,56 @@
+.serviceHeading {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.checkFirst div:first-child div {
+  margin-top: 0px;
+}
+
+.OP_BannerTR {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background: #eaf2ff;
+}
+
+.OP_BannerTR::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: auto;
+  bottom: -40px;
+  left: -60px;
+  right: 0px;
+  pointer-events: none;
+  background: url(../../static/img/services/travel.png) no-repeat;
+  background-position: right;
+  background-size: auto 80%;
+}
+
+.OP_BannerTR .container-fluid {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.OP_BannerTR .container-fluid h2 {
+  color: #413e66;
+  margin: 0px 0px 50px 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.OP_BannerTR .container-fluid h2 span {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0px 2px;
+}
+
+@media (max-width: 700px) {
+  .OP_BannerTR {
+    height: 30vh;
+  }
+}

@@ -1,0 +1,75 @@
+#MeetTheTeam {
+  padding: 50px 0px;
+}
+
+.teamFlex {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0px 40px;
+}
+
+.teamFlex .ImgSection {
+  flex: 2;
+  margin: 25px 0px;
+}
+
+.teamFlex .ImgSection img {
+  padding: 15px;
+}
+
+.teamFlex .ImgSection ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.teamFlex .ImgSection ul li {
+  flex: 1;
+  font-size: 15px;
+  text-align: center;
+}
+
+.teamFlex .ImgSection ul li:last-child {
+  color: #0271ae;
+}
+
+.teamFlex .ContentSectin {
+  flex: 6;
+}
+
+.teamFlex .ContentSectin b {
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: var(--color);
+  font-weight: 600;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+  padding: 15px 0px 0px;
+}
+
+.teamFlex .ContentSectin b::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  height: 2px;
+  width: 100px;
+  background: #afafaf;
+}
+
+.teamFlex .ContentSectin span {
+  display: block;
+  margin: 5px 0px 6px;
+  font-style: italic;
+}
+
+.teamFlex .ContentSectin p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  text-align: justify;
+}

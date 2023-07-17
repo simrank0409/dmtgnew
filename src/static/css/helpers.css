@@ -1,0 +1,197 @@
+:root {
+    --color: #0a516d;
+    --color_lght: #0f4d65;
+    --footerFont: 13px;
+    --dmt-D: #ee3a3c;
+    --dmt-M: #f9aa29;
+    --dmt-T: #4ab95e
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif
+}
+
+a, a:active, a:hover, a:link, a:visited {
+   
+    text-decoration: none
+}
+
+*::-webkit-scrollbar {
+    width: 6px
+}
+
+*::-webkit-scrollbar-track {
+    background: 0 0;
+    position: absolute
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background: #dadada
+}
+
+p {
+    text-align: justify;
+}
+
+.captchaImg {
+    border: none;
+    outline: none;
+    pointer-events: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: monospace;
+    margin: 18px 0px 0px;
+    padding: 0;
+    line-height: normal;
+    background: -webkit-linear-gradient(45deg,#09009f,#00ff95 80%);
+    background: #fc00ff;
+    background: -webkit-linear-gradient(to right,#00dbde,#fc00ff);
+    background: linear-gradient(to right,#00dbde,#fc00ff);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+}
+
+.inr::before {
+    content: '₹ '
+}
+
+.dmt-D {
+    color: var(--dmt-D)
+}
+
+.dmt-M {
+    color: var(--dmt-M)
+}
+
+.dmt-T {
+    color: var(--dmt-T)
+}
+
+.content {
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+.flexCetner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*################################### Scroll to Top ###################################*/
+.BackTotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0000;
+    width: 55px;
+    height: 55px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.6s linear;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    opacity: 0.7;
+    z-index: 999;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+    .BackTotop i {
+        color: #fff;
+        margin: 0;
+        position: relative;
+        left: -2px;
+        top: -15px;
+        font-size: 54px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        transform: rotate(-45deg);
+        display: block;
+    }
+
+    .BackTotop:hover {
+        opacity: 0.9;
+    }
+
+        .BackTotop:hover i {
+            top: -20px;
+        }
+
+.WhatsappAPI {
+    position: fixed;
+    bottom: 100px;
+    right: 28px;
+    background: #0000;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.6s linear;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    opacity: 0.7;
+    z-index: 999;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+    .WhatsappAPI i {
+        color: #fff;
+        margin: 0;
+        position: relative;
+        left: -2px;
+        top: -15px;
+        font-size: 46px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        transform: rotate( -45deg );
+    }
+
+    .WhatsappAPI:hover {
+        opacity: 1;
+    }
+/*##################################################*/
