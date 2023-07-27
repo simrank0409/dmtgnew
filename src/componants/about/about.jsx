@@ -60,11 +60,9 @@ const About = () => {
                 <h2>About Us</h2>
                 <h3>Established in 2015</h3>
                 <p class="paraSize">
-                  <span style={{ fontWeight: "500" }}>
-                    DMT GROUP
-                  </span>
-                  was incorporated in India in year 2015 with present offices in
-                  Delhi-NCR region. DMT is a medium size of Fintech company with
+                 
+                  DMT GROUP was incorporated in India in year 2015 with present offices in
+                  Delhi-NCR region. DMT is a medium size of Group company with
                   diversified business interest in areas like Financial
                   Inclusion, Travel, Media and Marketing, accounting, Technology, Telecom, Insurance, charity etc.
                 </p>
@@ -137,7 +135,7 @@ const About = () => {
         </div>
       </section>
 
-      <BusinessModel />
+      {/* <BusinessModel /> */}
 
       <section id="testimonials" className="wow fadeInUp">
         <div className="container">

@@ -1,7 +1,15 @@
 import React from "react";
 import "./mobilenavbar.css";
-import { Link } from "react-router-dom";
-const mobileNav = () => {
+import { Link } from 'react-scroll';
+import MobileNav from "./mobileNav";
+import { useState } from "react";
+// import { Link } from "react-router-dom";
+const mobileNav = ({ setIsActive, isActive, setNavshow, navshow }) => {
+
+  // const [navshow, setNavshow] = useState(false);
+  const handleNav = () => {
+    setNavshow(!navshow);
+  };
   return (
     <>
       <div className="mobilenNavBar">
@@ -18,63 +26,64 @@ const mobileNav = () => {
           <nav className="hello main-nav ml-auto ">
               <ul>
                 <li className="">
-                  <Link to="/">Home </Link>
+                <Link to="/">Home </Link>
                 </li>
-                <hr />
-                <li className="drop-down ">
+               
+                <li className="drop-down">
                   <Link to="">About</Link>
                   <ul>
                     <li>
-                      <Link to="/aboutus">About Us</Link>
+                      <a href="/aboutus">About Us</a>
                     </li>
                     <li>
-                      <Link to="/meettheteam">Meet the Team</Link>
+                      <a href="/meettheteam">Meet the Team</a>
                     </li>
                     <li>
-                      <Link to="/careers">Careers</Link>
+                      <a href="/careers">Careers</a>
                     </li>
                     <li>
-                      <Link to="/sitemap">Site Map</Link>
+                      <a href="/sitemap">Site Map</a>
                     </li>
                   </ul>
                 </li>
                 <li className="drop-down">
-                  <Link to="">Group Companies</Link>
+                  <a to="">Group Companies</a>
                   <ul>
                     <li>
-                      <a href="#DialMyTrip">DialMyTrip</a>
+                      <Link to="DialMyTrip">DialMyTrip</Link>
                     </li>
                     <li>
-                      <a href="#Accountancy">Accountancy</a>
+                      <Link to="Accountancy">Accountancy</Link>
                     </li>
                     <li>
-                      <a href="#MediaMarketing">Media and Marketing</a>
+                      <Link to="MediaMarketing">Media and Marketing</Link>
                     </li>
                     <li>
-                      <a href="#Shardajeet">Shardajeet Foundation</a>
+                      <Link to="Shardajeet">Shardajeet Foundation</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="">
-                  <Link to="/csp">CSP</Link>
+                <Link to="/csp">CSP</Link>
                 </li>
-                <li className="mr-3">
-                  <Link
-                    to="#"
+                {/* <li className="mr-3">
+                  <a
+                    href="#"
+                    onClick={() => setIsActive(!isActive)}
                     className="loginBtn _D toggle2" style={{marginRight:"",paddingLeft:"5px"}}
                   >
                     Enquiry
-                  </Link>
-                </li>
+                  </a>
+                </li> */}
                 <li className="mr-3">
-                  <Link to="/signup" className="loginBtn _M" style={{marginRight:"",paddingLeft:"5px"}}>
+                  <a href="/signup" className="loginBtn _M" style={{marginRight:"",paddingLeft:"5px"}}>
                     SignUp
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/login" className="loginBtn _T" style={{marginRight:"10px",paddingLeft:"5px"}}>
+                  <a href="/login" className="loginBtn _T" style={{marginRight:"10px",paddingLeft:"5px"}}>
                     Login
-                  </Link>
+                  </a>
                   </li>
                 </ul>
             </nav>

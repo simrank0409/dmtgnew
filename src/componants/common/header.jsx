@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import MobileNav from "./mobileNav";
+import { Link } from 'react-scroll';
 import { useState } from "react";
 const Header = ({ setIsActive, isActive }) => {
   const [navshow, setNavshow] = useState(false);
@@ -34,22 +35,22 @@ const Header = ({ setIsActive, isActive }) => {
             <nav className="main-nav ml-auto d-none d-lg-block">
               <ul>
                 <li>
-                  <Link to="/">Home </Link>
+                  <a href="/">Home </a>
                 </li>
                 <li className="drop-down">
-                  <Link to="">About</Link>
+                  <a href="">About</a>
                   <ul>
                     <li>
-                      <Link to="/aboutus">About Us</Link>
+                      <a href="/aboutus">About Us</a>
                     </li>
                     <li>
-                      <Link to="/meettheteam">Meet the Team</Link>
+                      <a href="/meettheteam">Meet the Team</a>
                     </li>
                     <li>
-                      <Link to="/careers">Careers</Link>
+                      <a href="/careers">Careers</a>
                     </li>
                     <li>
-                      <Link to="/sitemap">Site Map</Link>
+                      <a href="/sitemap">Site Map</a>
                     </li>
                   </ul>
                 </li>
@@ -136,50 +137,50 @@ const Header = ({ setIsActive, isActive }) => {
                   </ul>
                 </li> */}
                 <li className="drop-down">
-                  <Link to="">Group Companies</Link>
+                  <a href="">Group Companies</a>
                   <ul>
                     <li>
-                      <Link href="/#DialMyTrip">DialMyTrip</Link>
+                      <Link to="DialMyTrip">DialMyTrip</Link>
                     </li>
                     <li>
-                      <Link href="/#Accountancy">Accountancy</Link>
+                      <Link to="Accountancy">Accountancy</Link>
                     </li>
                     <li>
-                      <Link href="/#MediaMarketing">Media and Marketing</Link>
+                      <Link to="MediaMarketing">Media and Marketing</Link>
                     </li>
                     <li>
-                      <Link href="/#Shardajeet">Shardajeet Foundation</Link>
+                      <Link to="Shardajeet">Shardajeet Foundation</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to="/csp">CSP</Link>
+                  <a href="/csp">CSP</a>
                 </li>
                 <li className="mr-3">
-                  <Link
-                    to="#"
+                  <a
+                    href="#"
                     onClick={() => setIsActive(!isActive)}
                     className="loginBtn _D toggle2"
                   >
                     Enquiry
-                  </Link>
+                  </a>
                 </li>
                 <li className="mr-3">
-                  <Link to="/signup" className="loginBtn _M">
+                  <a href="/signup" className="loginBtn _M">
                     SignUp
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/login" className="loginBtn _T">
+                  <a href="/login" className="loginBtn _T">
                     Login
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </nav>
           </div>
         </header>
       </div>
-      {navshow && <MobileNav setNavshow={setNavshow} />}
+      {navshow && <MobileNav setNavshow={setNavshow} setIsActive={setIsActive} isActive={isActive}/>}
     </>
   );
 };

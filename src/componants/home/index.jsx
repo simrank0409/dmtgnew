@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
+import React from 'react';
+import { Element } from 'react-scroll';
 import Typewriter from "typewriter-effect";
 import "./sliderSection.css";
 import BusinessModel from "./BusinessModel";
@@ -10,6 +12,7 @@ import {ShardaData } from "./ShardaArray";
 import 'bootstrap/dist/css/bootstrap.css';
 import { WebRoutes } from "../../routes";
 const Home = ({ setIsActive, isActive }) => {
+  
   const options = {
     fade: true,
     accessibility: true,
@@ -95,6 +98,7 @@ const Home = ({ setIsActive, isActive }) => {
                       Holiday packages with economical & cost-effective pricing. */}
                     </p>
                     <Link
+                    to="/contact"
                       onClick={() => setIsActive(!isActive)}
                       className="btn  toggle-form"
                     >
@@ -446,12 +450,19 @@ const Home = ({ setIsActive, isActive }) => {
         </div>
 
         <div className="row content" >
-          <div className="">
+          <div className="about_us" style={{textAlign:"center"}}>
             <p> 
             DMT group was incorporated in India in year 2015 with present offices in Delhi-NCR region. DMT is a medium size of Fintech company with diversified business interest in areas like Financial Inclusion, Travel, Technology, Accountancy, media and marketing, Insurance etc. 
             DMT initiated its journey offering a range of best value products powered by technology and the best-in-class customer support to empower the Network with instant transactions and comprehensive choices. The company rise has been led by the vision and the spirit of each one of its employees, for whom no idea is too big and no problem is too difficult. With untiring determination, DMT has stayed ahead of the curve by continually evolving its technology to meet the ever-changing demands of the rapidly developing Industry, steadily establishing itself as one of India’s growing Company.
             </p>
-            <Link to="/aboutus"className=" link-style1" style={{marginLeft:"450px", marginTop:"30px", position:"absolute"}}>  know More </Link>
+
+            <Link
+                    to="/aboutus"
+                      className="btn  toggle-form"
+                    >
+                      Know More
+                    </Link>
+            {/* <Link to="/aboutus"className="btn  toggle-form link-style1" style={{marginLeft:"450px", marginTop:"30px", position:"absolute"}}>  know More </Link> */}
             {/* <ul>
               <li><i className="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
               <li><i className="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
@@ -467,7 +478,7 @@ const Home = ({ setIsActive, isActive }) => {
       </div>
     </section>
 
-      <section id="why-us " id="DialMyTrip" className="why-us section-bg dmt">
+      <Element name="DialMyTrip" className="why-us section-bg dmt" style={{padding: "60px 0"}}>
       <div className="container-fluid" data-aos="fade-up">
 
         <div className="row">
@@ -477,7 +488,7 @@ const Home = ({ setIsActive, isActive }) => {
             <div className="content" >
               <h3><strong>DialMyTrip</strong></h3>
               <p>
-              Dialmytrip provides with the best products and services of diverse range at valuable prices, fully backed up by its top-class customer care system. It has been established and find its place as a leading fintech company.
+              Dialmytrip provides with the best products and services of diverse range at valuable prices, fully backed up by its top-class customer care system. It has been established and find its place as a leading fintech company. Click on the services bellow to know more.
               </p>
             </div>
 
@@ -529,9 +540,9 @@ const Home = ({ setIsActive, isActive }) => {
         </div>
 
       </div>
-      </section>
-      <hr />
-      <section id="skills" id="Accountancy" className="skills acc" style={{backgroundColor:"#F3F5FA"}}>
+      </Element>
+     <hr />
+      <Element name="Accountancy" className="skills acc" style={{backgroundColor:"#f7e6ff"}}>
       <div className="container" data-aos="fade-up">
 
         <div className="row">
@@ -631,9 +642,9 @@ const Home = ({ setIsActive, isActive }) => {
         </div>
 
       </div>
-      </section>
-      <hr />
-      <section id="why-us" id="MediaMarketing" className="why-us section-bg media" >
+      </Element>
+     <hr />
+      <Element name="MediaMarketing" className="why-us section-bg media" style={{padding: "60px 0"}} >
       <div className="container-fluid" data-aos="fade-up">
 
         <div className="row">
@@ -704,9 +715,9 @@ const Home = ({ setIsActive, isActive }) => {
         </div>
 
       </div>
-      </section>
-      <hr />
-      <section id="skills" id="Shardajeet" className="skills sharda" style={{backgroundColor:"#F3F5FA"}}>
+      </Element>
+     <hr />
+      <Element  name="Shardajeet" className="skills sharda" style={{backgroundColor:"#f7e6ff"}}>
       <div className="container" data-aos="fade-up">
 
         <div className="row">
@@ -760,7 +771,7 @@ const Home = ({ setIsActive, isActive }) => {
         </div>
 
       </div>
-      </section>
+      </Element>
 
       {/* <section class="wow fadeIn  py-5" style={{backgroundColor:"rgb(245, 248, 253)"}}>
         <div class="container-fluid">
